@@ -1,41 +1,107 @@
 <!DOCTYPE html>
   <head>
-    <title></title>
+    <title>portfolio</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--css -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!--javascript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <article class="container-fluid">
-      <section class="row">
-        <div class="">
-          <img src="#" alt="icon">
+    <article class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/lego.jpeg" alt="icon">
          </div>
-         <div class="">
-          <h1 class="text-uppercase">Marc Preston</h1>
+         <div class="col-md-6">
+          <h1 class="text-uppercase text-right">Marc Preston</h1>
           <h4 class="text-right">Fullstack developer</h4>
         </div>
-      </section>
-      <section class="row">
-        <div class="col-sm-12">
-          <img src="#" alt="#">
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-responsive" src="images/code.jpg" alt="#">
         </div>
-      </section>
-      <section class="row">
-        <div class="col-sm-4">
-          <img src="" alt="">
-          <h4></h4>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Recent work</h3>
         </div>
-        <div class="col-sm-4">
-          <img src="" alt="">
-          <h4></h4>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img  class="img-responsive" src="images/motherboard.jpg" data-toggle="modal" data-target="#project1" alt="motherboard">
+          <h4>Fresh tomatoes movie page</h4>
+          <a href="https://github.com/phyrenight/Fresh-tomatoes-movie-page">github</a>
         </div>
-        <div class="col-sm-4">
-          <img src="" alt="">
-          <h4></h4>
+        <div class="col-md-4">
+          <img class="img-responsive" src="images/pair-programming.jpg" data-toggle="modal" data-target="#project2" alt="pair programming">
+          <h4>Swiss pair project</h4>
+          <a href="https://github.com/phyrenight/Udacity-project-2">github</a>
         </div>
-      </section>
+        <div class="col-md-4">
+          <img class="img-responsive" src="images/building.jpg" alt="building" data-toggle="modal" data-target="#project3">
+          <h4>Gameswap</h4>
+          <a href="https://github.com/phyrenight/up3">github</a>
+        </div>
+      </div>
     </article>
+    <!-- modal for project 1 start -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Fresh tomatoes</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/motherboard.jpg">
+            <p>Udacity first project for fullstack web developer.This project displays several of my personal favorite movies.When you hover over the movie it displays additional information.When you click on the movie,it will play a trailer for that movie.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- modalfor project 1 end -->
+    <!-- modal for project 2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Swiss pairs</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/pair-programming.jpg">
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal for project 3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">GameSwap</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/building.jpg">
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

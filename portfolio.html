@@ -1,28 +1,56 @@
 <!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>portfolio</title>
+    <title>Portfolio</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <!-- resets css so all browsers start with
+     the samething-->
+    <link rel="stylesheet" href="//normalize-css.googlecode.com/svn/trunk/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--css -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
     <!--javascript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <style>
+      .navbar-nav > li {
 
+      }
+    </style>
   </head>
   <body>
     <article class="container">
       <div class="row">
-        <div class="col-md-6">
-          <img src="images/lego.jpeg" alt="icon">
-         </div>
-         <div class="col-md-6">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <img src="images/lego.jpeg" alt="icon" class="img-responsive">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
           <h1 class="text-uppercase text-right">Marc Preston</h1>
           <h4 class="text-right">Fullstack developer</h4>
         </div>
       </div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Links</a>
+          </div>
+          <div class="collapse navbar-collapse row" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav col-md-offset-6">
+              <li><a href="https://github.com/phyrenight" target="_blank">Github</a></li>
+              <li><a href="http://linkedin.com/in/phyrenight" target="_blank">Linkedin</a></li>
+              <li><a href="http://codepen.io/phyrenight/#" target="_blank">Codepen</a></li>
+              <li class="disabled"><a href="#" target="_blank">Udacity</a></li>
+              <li class="disabled"><a href="#" target="_blank">CodeFight</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
       <hr/>
       <div class="row">
         <div class="col-md-12">
@@ -53,14 +81,14 @@
       </div>
     </article>
     <!-- modal for project 1 start -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="FreshModal" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel">Fresh tomatoes</h4>
+              <h4 class="modal-title" id="FreshModal">Fresh tomatoes</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/motherboard.jpg">
+            <img class="img-responsive" src="images/motherboard.jpg" alt="Gigabit motherboard">
             <p>Udacity first project for fullstack web developer.This project displays several of my personal favorite movies.When you hover over the movie it displays additional information.When you click on the movie,it will play a trailer for that movie.</p>
           </div>
           <div class="modal-footer">
@@ -70,15 +98,15 @@
       </div>
     </div><!-- modalfor project 1 end -->
     <!-- modal for project 2 -->
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="SwissPairModal" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Swiss pairs</h4>
+            <h4 class="modal-title" id="SwissPairModal">Swiss pairs</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/pair-programming.jpg">
-            <p></p>
+            <img class="img-responsive" src="images/pair-programming.jpg" alt="two people programming together">
+            <p>A simple Swiss pairing program</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
@@ -87,15 +115,15 @@
       </div>
     </div>
     <!--modal for project 3 -->
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="GameSwapModal" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">GameSwap</h4>
+            <h4 class="modal-title" id="GameSwapModal">GameSwap</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/building.jpg">
-            <p></p>
+            <img class="img-responsive" src="images/building.jpg" alt="a glass building">
+            <p>Gameswap a website  for swapping your console games</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">close</button>

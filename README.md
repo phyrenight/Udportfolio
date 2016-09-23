@@ -9,5 +9,5 @@ Navigate to the folder containing the portfolio.html file
 Then double click on portfolio.html
 
 ##resources
-[media query help](http://stackoverflow.com/questions/32801084/trouble-changing-h1-size-with-media-query)
-[bootstrap](https://getbootstrap.com/components/#btn-dropdowns)
+- [media query help](http://stackoverflow.com/questions/32801084/trouble-changing-h1-size-with-media-query)
+- [bootstrap](https://getbootstrap.com/components/#btn-dropdowns)
